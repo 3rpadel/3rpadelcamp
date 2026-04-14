@@ -1,0 +1,26 @@
+{
+  "name": "3R Padel Camp",
+  "short_name": "3R Padel",
+  "description": "Immersive padel training camp on the Costa Blanca, Spain. Coached by Rubén Ramos Resa, FIP-certified professional player.",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#0D0D0D",
+  "theme_color": "#0ABFBC",
+  "icons": [
+    {
+      "src": "favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}
