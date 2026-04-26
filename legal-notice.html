@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Legal Notice — 3R Padel Camp</title>
+  <meta name="description" content="Legal notice and terms of use for 3R Padel Camp." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --tiffany: #0ABFBC;
+      --tiffany-light: #5DD9D6;
+      --black: #0D0D0D;
+      --white: #FFFFFF;
+      --gray: #F5F5F5;
+      --gray-mid: #E0E0E0;
+      --text-muted: #888;
+      --text-body: #2a2a2a;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'DM Sans', sans-serif; background: var(--white); color: var(--black); overflow-x: hidden; line-height: 1.6; }
+
+    /* NAV */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0.5rem 3rem;
+      background: var(--tiffany);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      min-height: 70px;
+    }
+    .nav-logo {
+      display: flex; align-items: center; text-decoration: none;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.6rem; letter-spacing: 0.1em; color: var(--black);
+    }
+    .nav-logo span { color: var(--white); margin-right: 0.4rem; }
+    nav ul { list-style: none; display: flex; gap: 2rem; }
+    nav ul a {
+      text-decoration: none; color: rgba(0,0,0,0.75);
+      font-size: 0.85rem; font-weight: 500;
+      letter-spacing: 0.06em; text-transform: uppercase; transition: color 0.2s;
+    }
+    nav ul a:hover { color: var(--black); }
+    .nav-cta {
+      background: var(--black) !important; color: var(--white) !important;
+      padding: 0.5rem 1.3rem; border-radius: 2px; font-weight: 700 !important;
+    }
+    .nav-cta:hover { background: #333 !important; }
+
+    /* HEADER */
+    .legal-header {
+      background: var(--tiffany);
+      padding: 9rem 5rem 4rem;
+      position: relative; overflow: hidden;
+    }
+    .legal-header::before {
+      content: ''; position: absolute; inset: 0;
+      background-image: radial-gradient(circle, rgba(0,0,0,0.07) 1.5px, transparent 1.5px);
+      background-size: 22px 22px; pointer-events: none;
+    }
+    .legal-header-inner { position: relative; z-index: 1; max-width: 900px; margin: 0 auto; }
+    .legal-eyebrow {
+      display: inline-block; border: 2px solid rgba(0,0,0,0.25); border-radius: 100px;
+      padding: 0.35rem 1.05rem; font-size: 0.7rem; font-weight: 700;
+      letter-spacing: 0.14em; text-transform: uppercase; color: var(--black); margin-bottom: 1rem;
+    }
+    .legal-title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(3rem, 7vw, 5.5rem); line-height: 0.95;
+      color: var(--black); letter-spacing: 0.02em;
+    }
+    .legal-title .accent { color: var(--white); font-style: italic; font-family: 'DM Serif Display', serif; font-weight: normal; }
+    .legal-meta { margin-top: 1.2rem; font-size: 0.8rem; color: rgba(0,0,0,0.6); letter-spacing: 0.04em; }
+
+    /* CONTENT */
+    .legal-body {
+      max-width: 820px; margin: 0 auto;
+      padding: 4.5rem 2rem 6rem;
+      color: var(--text-body);
+    }
+    .legal-body p { margin-bottom: 1.1rem; font-size: 1rem; }
+    .legal-body strong { color: var(--black); font-weight: 600; }
+    .legal-body a { color: var(--black); text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
+    .legal-body a:hover { color: var(--tiffany); }
+
+    .legal-intro {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.25rem; line-height: 1.55; color: var(--black);
+      padding-bottom: 2.5rem; margin-bottom: 2.5rem;
+      border-bottom: 1px solid var(--gray-mid);
+    }
+
+    .legal-section { margin-top: 3rem; }
+    .legal-section:first-of-type { margin-top: 0; }
+    .legal-section-num {
+      display: inline-block; font-family: 'Bebas Neue', sans-serif;
+      font-size: 0.95rem; letter-spacing: 0.15em; color: var(--tiffany);
+      margin-bottom: 0.5rem;
+    }
+    .legal-section h2 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 2rem; letter-spacing: 0.04em;
+      color: var(--black); margin-bottom: 1.2rem; line-height: 1.05;
+    }
+    .legal-section h3 {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 1rem; font-weight: 600; color: var(--black);
+      margin-top: 1.5rem; margin-bottom: 0.6rem;
+      letter-spacing: 0.02em;
+    }
+    .legal-section ul {
+      list-style: none; padding-left: 0; margin-bottom: 1.1rem;
+    }
+    .legal-section ul li {
+      position: relative; padding-left: 1.6rem; margin-bottom: 0.7rem;
+    }
+    .legal-section ul li::before {
+      content: ''; position: absolute; left: 0; top: 0.65rem;
+      width: 8px; height: 1px; background: var(--tiffany);
+    }
+
+    /* PROVIDER CARD */
+    .controller-card {
+      background: var(--gray); border-left: 3px solid var(--tiffany);
+      padding: 1.6rem 1.8rem; margin: 1.4rem 0;
+      font-size: 0.92rem; line-height: 1.65;
+    }
+    .controller-card .row { display: flex; gap: 0.6rem; padding: 0.15rem 0; }
+    .controller-card .label {
+      flex: 0 0 150px; font-weight: 600; color: var(--text-muted);
+      text-transform: uppercase; letter-spacing: 0.08em; font-size: 0.7rem;
+      padding-top: 0.2rem;
+    }
+    .controller-card .val { color: var(--black); }
+    .placeholder {
+      background: rgba(10,191,188,0.1); color: var(--tiffany);
+      padding: 0.05rem 0.35rem; border-radius: 2px; font-weight: 600;
+      font-size: 0.85em;
+    }
+
+    /* CALLOUT */
+    .callout {
+      background: var(--gray); border-left: 3px solid var(--tiffany);
+      padding: 1.4rem 1.6rem; margin: 1.4rem 0;
+      font-size: 0.95rem; line-height: 1.6;
+    }
+    .callout strong { display: block; font-family: 'Bebas Neue', sans-serif; font-size: 0.95rem; letter-spacing: 0.12em; color: var(--tiffany); margin-bottom: 0.5rem; }
+
+    /* CTA AT BOTTOM */
+    .legal-footer-link {
+      margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--gray-mid);
+      display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;
+      font-size: 0.82rem; color: var(--text-muted);
+    }
+    .legal-footer-link a { color: var(--black); }
+
+    /* FOOTER */
+    footer {
+      background: var(--black); padding: 2rem 5rem;
+      display: flex; align-items: center; justify-content: space-between;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      flex-wrap: wrap; gap: 1rem;
+    }
+    .footer-logo { font-family: 'Bebas Neue', sans-serif; font-size: 1.1rem; color: var(--white); letter-spacing: 0.1em; }
+    .footer-logo span { color: var(--tiffany); }
+    footer p { font-size: 0.75rem; color: rgba(255,255,255,0.3); }
+    .footer-links { display: flex; gap: 1.5rem; }
+    footer a { color: var(--tiffany); text-decoration: none; font-size: 0.75rem; letter-spacing: 0.05em; }
+    footer a:hover { color: var(--tiffany-light); }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      nav { padding: 1rem 1.5rem; }
+      nav ul { display: none; }
+      .legal-header { padding: 7rem 1.5rem 3rem; }
+      .legal-body { padding: 3rem 1.5rem 4rem; }
+      .controller-card .row { flex-direction: column; gap: 0.1rem; }
+      .controller-card .label { flex: none; padding-top: 0; }
+      footer { flex-direction: column; text-align: center; padding: 2rem 1.5rem; }
+      .legal-footer-link { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="index.html"><span>3R</span>PADEL CAMP</a>
+    <ul>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#program">Program</a></li>
+      <li><a href="index.html#coach">Coach</a></li>
+      <li><a href="index.html#location">Location</a></li>
+      <li><a href="index.html#contact" class="nav-cta">Book a Spot</a></li>
+    </ul>
+  </nav>
+
+  <header class="legal-header">
+    <div class="legal-header-inner">
+      <div class="legal-eyebrow">Legal</div>
+      <h1 class="legal-title">Legal <span class="accent">notice.</span></h1>
+      <p class="legal-meta">Last updated: 25 April 2026</p>
+    </div>
+  </header>
+
+  <main class="legal-body">
+
+    <p class="legal-intro">
+      This Legal Notice ("<em>Aviso Legal</em>") sets out the identifying information of the operator of this website and the general conditions governing access to and use of <strong>3rpadelcamp.com</strong>, in accordance with Article 10 of Spanish Law 34/2002 of 11 July on Information Society Services and Electronic Commerce (LSSI-CE).
+    </p>
+
+    <!-- 1. PROVIDER IDENTIFICATION -->
+    <section class="legal-section">
+      <span class="legal-section-num">— 01</span>
+      <h2>Service provider identification</h2>
+      <p>In compliance with the duty of information set forth in Article 10 LSSI-CE, the following information is provided about the operator of this website (the "Provider"):</p>
+      <div class="controller-card">
+        <div class="row"><div class="label">Trade name</div><div class="val">3R Padel Camp</div></div>
+        <div class="row"><div class="label">Legal entity</div><div class="val">Rubén Ramos Resa (autónomo)</div></div>
+        <div class="row"><div class="label">Tax ID (NIF)</div><div class="val">05416428C</div></div>
+        <div class="row"><div class="label">Registered address</div><div class="val">Calle García Morato 7, Lo Pagán, 30740 San Pedro del Pinatar, Murcia, Spain</div></div>
+        <div class="row"><div class="label">Contact email</div><div class="val">3rpadelclub@gmail.com</div></div>
+        <div class="row"><div class="label">Website</div><div class="val">3rpadelcamp.com</div></div>
+        <div class="row"><div class="label">Activity</div><div class="val">Padel training camps and coaching services</div></div>
+      </div>
+    </section>
+
+    <!-- 2. PURPOSE -->
+    <section class="legal-section">
+      <span class="legal-section-num">— 02</span>
+      <h2>Purpose of the website</h2>
+      <p>3rpadelcamp.com is an informational website. Its purpose is to present the training camps offered by 3R Padel Camp under the coaching of Rubén Ramos Resa, to describe the format and location of those camps, and to enable potential participants to send enquiries through a contact form.</p>
+      <p>This website is not a transactional platform: <strong>no bookings, payments, or contracts can be concluded directly through the site</strong>. All commercial arrangements are agreed separately by email or other direct communication between the user and the Provider.</p>
+    </section>
+
+    <!-- 3. ACCEPTANCE -->
+    <section class="legal-section">
+      <span class="legal-section-num">— 03</span>
+      <h2>Acceptance of these terms</h2>
+      <p>Access to and use of this website attributes the condition of "User" to anyone using it. By using the website, the User agrees to comply with this Legal Notice, the <a href="privacy-policy.html">Privacy Policy</a>, the <a href="cookie-policy.html">Cookie Policy</a>, and any other applicable legal provisions. If the User does not agree with these terms, they should not access or use the website.</p>
+      <p>The Provider reserves the right to modify, at any time and without prior notice, the content and design of the website, as well as these terms. Such modifications will be deemed to have been communicated to the User by their publication on the website.</p>
+    </section>
+
+    <!-- 4. USE OF THE WEBSITE -->
+    <section class="legal-section">
+      <span class="legal-section-num">— 04</span>
+      <h2>Use of the website</h2>
+      <p>The User agrees to use the website, its contents, and its services in accordance with the law, this Legal Notice, good morals, and public order. In particular, the User shall not:</p>
+      <ul>
+        <li>Use the website for unlawful, fraudulent, or harmful purposes, or in a way that may damage, overload, or impair the website or interfere with any other party's use of it.</li>
+        <li>Attempt to gain unauthorised access to the website, the servers on which it is hosted, or any associated database.</li>
+        <li>Introduce viruses, malware, or any other technologically harmful material.</li>
+        <li>Reproduce, copy, distribute, or make publicly available any content from the website without the prior written authorisation of the Provider.</li>
+        <li>Submit, through the contact form, false personal information or information belonging to third parties without their consent.</li>
+      </ul>
+    </section>
+
+    <!-- 5. IP -->
+    <section class="legal-section">
+      <span class="legal-section-num">— 05</span>
+      <h2>Intellectual and industrial property</h2>
+      <p>All content on this website — including, without limitation, the source code, design, structure, navigation, text, photographs, images, logos, trademarks, trade names, graphics, audio and video files — is the property of the Provider or of third parties who have authorised their use, and is protected by Spanish and international intellectual and industrial property laws.</p>
+      <p>The reproduction, distribution, public communication, transformation, or any other form of exploitation of the content of this website, in whole or in part, is prohibited without the prior, express, and written consent of the Provider.</p>
+      <p>The "3R Padel Camp" name and logo, as well as the name and image of Rubén Ramos Resa where they appear on this website, are used with authorisation and may not be reproduced or used in any way without the prior consent of the relevant rights holder.</p>
+    </section>
+
+    <!-- 6. LIABILITY — INCL. PHYSICAL ACTIVITY -->
+    <section class="legal-section">
+      <span class="legal-section-num">— 06</span>
+      <h2>Liability and disclaimers</h2>
+
+      <h3>Website content</h3>
+      <p>The Provider strives to keep the information on this website accurate and up to date but does not warrant the absence of errors or omissions. Information about the camp's program, coaches, location, and format is provided for general informational purposes and may be modified without prior notice. Any specific terms of participation — including dates, hours, format, pricing, and conditions — are confirmed individually by email and are only binding once expressly agreed in writing between the User and the Provider.</p>
+
+      <h3>Technical availability</h3>
+      <p>The Provider does not guarantee uninterrupted availability of the website and shall not be liable for damages arising from temporary interruptions, errors, or unavailability caused by force majeure, third-party actions, network issues, or maintenance. The Provider shall not be liable for damages caused to the User's equipment by viruses or other harmful elements.</p>
+
+      <h3>Physical activity — important notice</h3>
+      <div class="callout">
+        <strong>Padel is a physical activity</strong>
+        <p style="margin: 0;">Participation in any 3R Padel Camp activity involves physical effort and inherent risks associated with sports. Participants are responsible for ensuring that they are in adequate physical condition to take part, and for disclosing any pre-existing medical condition, injury, or limitation prior to participation. The Provider strongly recommends that participants hold valid personal accident and medical insurance covering sports activities for the duration of the camp. Specific terms regarding waivers, insurance, and assumption of risk will be communicated and agreed in writing prior to the start of any camp.</p>
+      </div>
+    </section>
+
+    <!-- 7. THIRD-PARTY LINKS -->
+    <section class="legal-section">
+      <span class="legal-section-num">— 07</span>
+      <h2>Links to third-party websites</h2>
+      <p>This website may contain links to third-party websites operated by parties unaffiliated with the Provider. The inclusion of these links does not imply any approval, recommendation, or association with their content. The Provider does not control, monitor, or assume any responsibility for the content, privacy practices, or services of those external websites. The User accesses such third-party websites at their own risk and subject to the terms and conditions of those sites.</p>
+      <p>In compliance with Articles 11 and 16 LSSI-CE, the Provider undertakes to remove or block any link as soon as it becomes aware that the linked content infringes Spanish or international law, the rights of third parties, or public morals and order.</p>
+    </section>
+
+    <!-- 8. DATA PROTECTION -->
+    <section class="legal-section">
+      <span class="legal-section-num">— 08</span>
+      <h2>Data protection</h2>
+      <p>The processing of personal data collected through this website — in particular, through the contact form — is governed by our <a href="privacy-policy.html">Privacy Policy</a>. The use of cookies and similar technologies is described in our <a href="cookie-policy.html">Cookie Policy</a>. Both documents form an integral part of this Legal Notice.</p>
+    </section>
+
+    <!-- 9. NULLITY -->
+    <section class="legal-section">
+      <span class="legal-section-num">— 09</span>
+      <h2>Severability</h2>
+      <p>If any provision of this Legal Notice is found to be invalid, illegal, or unenforceable by a competent court or authority, the remaining provisions shall continue in full force and effect. The invalid provision shall be replaced, where possible, by a valid provision that most closely reflects the original intent of the parties.</p>
+    </section>
+
+    <!-- 10. GOVERNING LAW -->
+    <section class="legal-section">
+      <span class="legal-section-num">— 10</span>
+      <h2>Applicable law and jurisdiction</h2>
+      <p>This Legal Notice and any matter relating to the use of this website are governed by Spanish law.</p>
+      <p>For the resolution of any dispute that may arise from access to or use of the website, the Provider and the User submit, expressly waiving any other jurisdiction that may apply, to the courts and tribunals of Murcia, Spain, except where mandatory consumer protection rules establish otherwise — in which case the User who qualifies as a consumer may also bring proceedings before the courts of their place of residence within the European Union.</p>
+    </section>
+
+    <!-- 11. CHANGES -->
+    <section class="legal-section">
+      <span class="legal-section-num">— 11</span>
+      <h2>Changes to this Legal Notice</h2>
+      <p>The Provider reserves the right to modify this Legal Notice at any time, in order to adapt it to legislative or jurisprudential changes, or to changes in the operation of the website or the services offered. The most current version will always be published on this page, with the "Last updated" date at the top reflecting the most recent revision.</p>
+    </section>
+
+    <div class="legal-footer-link">
+      <span>Questions about this notice? Email <a href="mailto:3rpadelclub@gmail.com">3rpadelclub@gmail.com</a></span>
+      <a href="privacy-policy.html">View Privacy Policy →</a>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="footer-logo"><span>3R</span> PADEL CAMP</div>
+    <p>© 2026 3R Padel Camp · Orihuela Costa, Spain</p>
+    <div class="footer-links">
+      <a href="legal-notice.html">Legal</a>
+      <a href="privacy-policy.html">Privacy</a>
+      <a href="cookie-policy.html">Cookies</a>
+      <a href="mailto:3rpadelclub@gmail.com">Contact</a>
+    </div>
+  </footer>
+
+</body>
+</html>

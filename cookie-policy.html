@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cookie Policy — 3R Padel Camp</title>
+  <meta name="description" content="Cookie policy for 3R Padel Camp." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --tiffany: #0ABFBC;
+      --tiffany-light: #5DD9D6;
+      --black: #0D0D0D;
+      --white: #FFFFFF;
+      --gray: #F5F5F5;
+      --gray-mid: #E0E0E0;
+      --text-muted: #888;
+      --text-body: #2a2a2a;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'DM Sans', sans-serif; background: var(--white); color: var(--black); overflow-x: hidden; line-height: 1.6; }
+
+    /* NAV */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0.5rem 3rem;
+      background: var(--tiffany);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      min-height: 70px;
+    }
+    .nav-logo {
+      display: flex; align-items: center; text-decoration: none;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.6rem; letter-spacing: 0.1em; color: var(--black);
+    }
+    .nav-logo span { color: var(--white); margin-right: 0.4rem; }
+    nav ul { list-style: none; display: flex; gap: 2rem; }
+    nav ul a {
+      text-decoration: none; color: rgba(0,0,0,0.75);
+      font-size: 0.85rem; font-weight: 500;
+      letter-spacing: 0.06em; text-transform: uppercase; transition: color 0.2s;
+    }
+    nav ul a:hover { color: var(--black); }
+    .nav-cta {
+      background: var(--black) !important; color: var(--white) !important;
+      padding: 0.5rem 1.3rem; border-radius: 2px; font-weight: 700 !important;
+    }
+    .nav-cta:hover { background: #333 !important; }
+
+    /* HEADER */
+    .legal-header {
+      background: var(--tiffany);
+      padding: 9rem 5rem 4rem;
+      position: relative; overflow: hidden;
+    }
+    .legal-header::before {
+      content: ''; position: absolute; inset: 0;
+      background-image: radial-gradient(circle, rgba(0,0,0,0.07) 1.5px, transparent 1.5px);
+      background-size: 22px 22px; pointer-events: none;
+    }
+    .legal-header-inner { position: relative; z-index: 1; max-width: 900px; margin: 0 auto; }
+    .legal-eyebrow {
+      display: inline-block; border: 2px solid rgba(0,0,0,0.25); border-radius: 100px;
+      padding: 0.35rem 1.05rem; font-size: 0.7rem; font-weight: 700;
+      letter-spacing: 0.14em; text-transform: uppercase; color: var(--black); margin-bottom: 1rem;
+    }
+    .legal-title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(3rem, 7vw, 5.5rem); line-height: 0.95;
+      color: var(--black); letter-spacing: 0.02em;
+    }
+    .legal-title .accent { color: var(--white); font-style: italic; font-family: 'DM Serif Display', serif; font-weight: normal; }
+    .legal-meta { margin-top: 1.2rem; font-size: 0.8rem; color: rgba(0,0,0,0.6); letter-spacing: 0.04em; }
+
+    /* CONTENT */
+    .legal-body {
+      max-width: 820px; margin: 0 auto;
+      padding: 4.5rem 2rem 6rem;
+      color: var(--text-body);
+    }
+    .legal-body p { margin-bottom: 1.1rem; font-size: 1rem; }
+    .legal-body strong { color: var(--black); font-weight: 600; }
+    .legal-body a { color: var(--black); text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
+    .legal-body a:hover { color: var(--tiffany); }
+
+    .legal-intro {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.25rem; line-height: 1.55; color: var(--black);
+      padding-bottom: 2.5rem; margin-bottom: 2.5rem;
+      border-bottom: 1px solid var(--gray-mid);
+    }
+
+    .legal-section { margin-top: 3rem; }
+    .legal-section:first-of-type { margin-top: 0; }
+    .legal-section-num {
+      display: inline-block; font-family: 'Bebas Neue', sans-serif;
+      font-size: 0.95rem; letter-spacing: 0.15em; color: var(--tiffany);
+      margin-bottom: 0.5rem;
+    }
+    .legal-section h2 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 2rem; letter-spacing: 0.04em;
+      color: var(--black); margin-bottom: 1.2rem; line-height: 1.05;
+    }
+    .legal-section h3 {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 1rem; font-weight: 600; color: var(--black);
+      margin-top: 1.5rem; margin-bottom: 0.6rem;
+      letter-spacing: 0.02em;
+    }
+    .legal-section ul {
+      list-style: none; padding-left: 0; margin-bottom: 1.1rem;
+    }
+    .legal-section ul li {
+      position: relative; padding-left: 1.6rem; margin-bottom: 0.7rem;
+    }
+    .legal-section ul li::before {
+      content: ''; position: absolute; left: 0; top: 0.65rem;
+      width: 8px; height: 1px; background: var(--tiffany);
+    }
+
+    /* COOKIE TABLE */
+    .cookie-table {
+      width: 100%; border-collapse: collapse; margin: 1.5rem 0;
+      font-size: 0.88rem; background: var(--gray);
+    }
+    .cookie-table th, .cookie-table td {
+      padding: 0.85rem 1rem; text-align: left;
+      border-bottom: 1px solid var(--gray-mid); vertical-align: top;
+    }
+    .cookie-table th {
+      background: var(--black); color: var(--white);
+      font-family: 'Bebas Neue', sans-serif; font-size: 0.85rem;
+      letter-spacing: 0.1em; font-weight: normal;
+    }
+    .cookie-table tr:last-child td { border-bottom: none; }
+    .cookie-table .cookie-name { font-family: 'DM Sans', sans-serif; font-weight: 600; color: var(--black); }
+    .cookie-table .cookie-type {
+      display: inline-block; padding: 0.15rem 0.55rem;
+      border-radius: 100px; font-size: 0.7rem; font-weight: 600;
+      letter-spacing: 0.05em; text-transform: uppercase;
+    }
+    .cookie-table .type-strict { background: rgba(10,191,188,0.15); color: var(--tiffany); }
+    .cookie-table .type-third { background: rgba(0,0,0,0.08); color: var(--text-body); }
+
+    /* CALLOUT */
+    .callout {
+      background: var(--gray); border-left: 3px solid var(--tiffany);
+      padding: 1.4rem 1.6rem; margin: 1.4rem 0;
+      font-size: 0.95rem; line-height: 1.6;
+    }
+
+    .placeholder {
+      background: rgba(10,191,188,0.1); color: var(--tiffany);
+      padding: 0.05rem 0.35rem; border-radius: 2px; font-weight: 600;
+      font-size: 0.85em;
+    }
+
+    /* CTA AT BOTTOM */
+    .legal-footer-link {
+      margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--gray-mid);
+      display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;
+      font-size: 0.82rem; color: var(--text-muted);
+    }
+    .legal-footer-link a { color: var(--black); }
+
+    /* FOOTER */
+    footer {
+      background: var(--black); padding: 2rem 5rem;
+      display: flex; align-items: center; justify-content: space-between;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      flex-wrap: wrap; gap: 1rem;
+    }
+    .footer-logo { font-family: 'Bebas Neue', sans-serif; font-size: 1.1rem; color: var(--white); letter-spacing: 0.1em; }
+    .footer-logo span { color: var(--tiffany); }
+    footer p { font-size: 0.75rem; color: rgba(255,255,255,0.3); }
+    .footer-links { display: flex; gap: 1.5rem; }
+    footer a { color: var(--tiffany); text-decoration: none; font-size: 0.75rem; letter-spacing: 0.05em; }
+    footer a:hover { color: var(--tiffany-light); }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      nav { padding: 1rem 1.5rem; }
+      nav ul { display: none; }
+      .legal-header { padding: 7rem 1.5rem 3rem; }
+      .legal-body { padding: 3rem 1.5rem 4rem; }
+      footer { flex-direction: column; text-align: center; padding: 2rem 1.5rem; }
+      .legal-footer-link { flex-direction: column; align-items: flex-start; }
+      .cookie-table { font-size: 0.82rem; }
+      .cookie-table th, .cookie-table td { padding: 0.65rem 0.7rem; }
+    }
+    @media (max-width: 560px) {
+      .cookie-table thead { display: none; }
+      .cookie-table, .cookie-table tbody, .cookie-table tr, .cookie-table td { display: block; width: 100%; }
+      .cookie-table tr { padding: 0.8rem 1rem; border-bottom: 1px solid var(--gray-mid); }
+      .cookie-table td { border: none; padding: 0.25rem 0; }
+      .cookie-table td::before { content: attr(data-label); display: block; font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.15rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="index.html"><span>3R</span>PADEL CAMP</a>
+    <ul>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#program">Program</a></li>
+      <li><a href="index.html#coach">Coach</a></li>
+      <li><a href="index.html#location">Location</a></li>
+      <li><a href="index.html#contact" class="nav-cta">Book a Spot</a></li>
+    </ul>
+  </nav>
+
+  <header class="legal-header">
+    <div class="legal-header-inner">
+      <div class="legal-eyebrow">Legal</div>
+      <h1 class="legal-title">Cookie <span class="accent">policy.</span></h1>
+      <p class="legal-meta">Last updated: 25 April 2026</p>
+    </div>
+  </header>
+
+  <main class="legal-body">
+
+    <p class="legal-intro">
+      This Cookie Policy explains how 3R Padel Camp uses cookies and similar technologies on its website at 3rpadelcamp.com. It applies together with our <a href="privacy-policy.html">Privacy Policy</a> and is provided in accordance with Article 22.2 of Spanish Law 34/2002 (LSSI-CE) and the guidance issued by the Spanish Data Protection Agency (AEPD).
+    </p>
+
+    <!-- 1. WHAT IS A COOKIE -->
+    <section class="legal-section">
+      <span class="legal-section-num">— 01</span>
+      <h2>What is a cookie?</h2>
+      <p>A cookie is a small text file that a website stores in your browser when you visit it. Cookies allow a site to remember information about your visit, such as your preferences, so that subsequent visits can work more efficiently and securely. Some cookies are essential for the site to function. Others are optional and are only used with your consent.</p>
+      <p>For the purposes of this policy, we use the term "cookies" to also refer to similar tracking technologies such as pixel tags, web beacons, scripts, and local storage.</p>
+    </section>
+
+    <!-- 2. OUR APPROACH -->
+    <section class="legal-section">
+      <span class="legal-section-num">— 02</span>
+      <h2>Our approach</h2>
+      <p>3R Padel Camp's website is a single informational page. We have deliberately kept its technical footprint minimal:</p>
+      <div class="callout">
+        <p style="margin: 0;"><strong>We do not use:</strong> Google Analytics, Meta (Facebook) Pixel, advertising cookies, behavioural-advertising tracking, social-media tracking pixels, or any third-party analytics or marketing tools.</p>
+      </div>
+      <p>The only cookies that may be set when you visit our site are technical cookies set by the providers we use to host and protect the site. These are described in the next section.</p>
+    </section>
+
+    <!-- 3. COOKIES USED -->
+    <section class="legal-section">
+      <span class="legal-section-num">— 03</span>
+      <h2>Cookies used on this website</h2>
+
+      <h3>Strictly necessary / technical cookies</h3>
+      <p>These cookies are required for the website to function correctly and securely. Under Article 22.2 LSSI-CE, technical cookies that are strictly necessary do not require prior consent.</p>
+
+      <table class="cookie-table">
+        <thead>
+          <tr>
+            <th>Cookie / technology</th>
+            <th>Set by</th>
+            <th>Purpose</th>
+            <th>Duration</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Cookie" class="cookie-name">__cf_bm</td>
+            <td data-label="Set by"><span class="cookie-type type-third">Cloudflare (third party)</span></td>
+            <td data-label="Purpose">Bot management. Distinguishes genuine human visitors from automated bots, helping protect the site from malicious traffic.</td>
+            <td data-label="Duration">~30 minutes</td>
+          </tr>
+          <tr>
+            <td data-label="Cookie" class="cookie-name">cf_clearance</td>
+            <td data-label="Set by"><span class="cookie-type type-third">Cloudflare (third party)</span></td>
+            <td data-label="Purpose">Records that a visitor has passed Cloudflare's security challenges, so the same challenge is not repeated on every page.</td>
+            <td data-label="Duration">Up to 1 year</td>
+          </tr>
+          <tr>
+            <td data-label="Cookie" class="cookie-name">Email obfuscation script</td>
+            <td data-label="Set by"><span class="cookie-type type-third">Cloudflare (third party)</span></td>
+            <td data-label="Purpose">Hides email addresses on the page from automated scrapers. Runs locally in your browser; does not normally set persistent cookies.</td>
+            <td data-label="Duration">Session only</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Other third-party services that may receive your IP address</h3>
+      <p>The following services are loaded by our website but, to the best of our knowledge, do not set cookies in your browser. They may, however, log your IP address as part of normal request handling:</p>
+      <ul>
+        <li><strong>Google Fonts</strong> (Google LLC) — used to deliver the typefaces you see on this site (Bebas Neue, DM Serif Display, DM Sans). When your browser loads a font, your IP address is sent to Google's servers. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</li>
+        <li><strong>GitHub Pages</strong> (GitHub, Inc., a Microsoft subsidiary) — used to host the static files of this website. See <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">GitHub's Privacy Statement</a>.</li>
+      </ul>
+    </section>
+
+    <!-- 4. CONSENT -->
+    <section class="legal-section">
+      <span class="legal-section-num">— 04</span>
+      <h2>Your consent</h2>
+      <p>Because the cookies described in Section 3 are strictly necessary for security and the technical operation of the website, they fall within the exemption in Article 22.2 LSSI-CE and may be set without prior consent.</p>
+      <p>If, in the future, we add cookies that are not strictly necessary (for example, analytics or marketing cookies), we will update this policy and request your prior, informed, and revocable consent through a cookie consent banner before any such cookies are set.</p>
+    </section>
+
+    <!-- 5. INTERNATIONAL TRANSFERS -->
+    <section class="legal-section">
+      <span class="legal-section-num">— 05</span>
+      <h2>International data transfers</h2>
+      <p>Cloudflare, Google, and GitHub are companies based in the United States. Information processed through these services (such as your IP address) may therefore be transferred outside the European Economic Area. These transfers are protected by appropriate safeguards under the GDPR, in particular:</p>
+      <ul>
+        <li>The <strong>EU–U.S. Data Privacy Framework</strong>, where the recipient is certified.</li>
+        <li>The European Commission's <strong>Standard Contractual Clauses</strong>.</li>
+        <li>Supplementary technical and organisational measures where appropriate.</li>
+      </ul>
+      <p>For more information, please consult the privacy policies of these providers, linked in Section 3.</p>
+    </section>
+
+    <!-- 6. HOW TO MANAGE COOKIES -->
+    <section class="legal-section">
+      <span class="legal-section-num">— 06</span>
+      <h2>How to disable or delete cookies</h2>
+      <p>You can configure your browser to block or delete cookies, including the technical cookies described above. Please be aware that doing so may affect the proper functioning of this website and other websites you visit.</p>
+      <p>Instructions for the most popular browsers are available here:</p>
+      <ul>
+        <li><strong>Google Chrome</strong> — <a href="https://support.google.com/chrome/answer/95647" target="_blank" rel="noopener">Settings → Privacy and security → Cookies and other site data</a></li>
+        <li><strong>Mozilla Firefox</strong> — <a href="https://support.mozilla.org/en-US/kb/cookies-information-websites-store-on-your-computer" target="_blank" rel="noopener">Settings → Privacy & Security → Cookies and Site Data</a></li>
+        <li><strong>Apple Safari</strong> — <a href="https://support.apple.com/guide/safari/manage-cookies-sfri11471/mac" target="_blank" rel="noopener">Preferences → Privacy</a></li>
+        <li><strong>Microsoft Edge</strong> — <a href="https://support.microsoft.com/en-us/microsoft-edge/delete-cookies-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09" target="_blank" rel="noopener">Settings → Cookies and site permissions</a></li>
+        <li><strong>Safari for iOS</strong> — Settings → Safari → Privacy & Security</li>
+        <li><strong>Chrome for Android</strong> — Settings → Site settings → Cookies</li>
+      </ul>
+      <p>For other browsers, please consult their official documentation.</p>
+    </section>
+
+    <!-- 7. PROFILING -->
+    <section class="legal-section">
+      <span class="legal-section-num">— 07</span>
+      <h2>Profiling and automated decisions</h2>
+      <p>3R Padel Camp does not create user profiles based on cookies, and does not make automated decisions that produce legal or similarly significant effects on visitors.</p>
+    </section>
+
+    <!-- 8. UPDATES -->
+    <section class="legal-section">
+      <span class="legal-section-num">— 08</span>
+      <h2>Changes to this Cookie Policy</h2>
+      <p>We may update this Cookie Policy to reflect changes in the technologies we use, in our service providers, or in applicable law. The most current version will always be available on this page, with the "Last updated" date at the top reflecting the most recent revision. If the changes are material — for example, if we introduce non-essential cookies that require consent — we will notify you appropriately, for example via a banner on the website.</p>
+    </section>
+
+    <!-- 9. MORE INFO -->
+    <section class="legal-section">
+      <span class="legal-section-num">— 09</span>
+      <h2>More information</h2>
+      <p>For more information about how we process personal data more generally, including your rights and how to contact the data controller, please read our <a href="privacy-policy.html">Privacy Policy</a>.</p>
+      <p>If you have any questions or concerns specifically about this Cookie Policy, you can write to us at <a href="mailto:3rpadelclub@gmail.com">3rpadelclub@gmail.com</a>.</p>
+    </section>
+
+    <div class="legal-footer-link">
+      <span>Questions about cookies? Email <a href="mailto:3rpadelclub@gmail.com">3rpadelclub@gmail.com</a></span>
+      <a href="privacy-policy.html">View Privacy Policy →</a>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="footer-logo"><span>3R</span> PADEL CAMP</div>
+    <p>© 2026 3R Padel Camp · Orihuela Costa, Spain</p>
+    <div class="footer-links">
+      <a href="privacy-policy.html">Privacy</a>
+      <a href="cookie-policy.html">Cookies</a>
+      <a href="mailto:3rpadelclub@gmail.com">Contact</a>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -64,7 +64,7 @@
       "@type": "Organization",
       "name": "3R Padel Camp",
       "url": "https://3rpadelcamp.com/",
-      "email": "3rpadelcamp@gmail.com"
+      "email": "3rpadelclub@gmail.com"
     },
     "performer": {
       "@type": "Person",
@@ -431,7 +431,12 @@
     .footer-logo { font-family: 'Bebas Neue', sans-serif; font-size: 1.1rem; color: var(--white); letter-spacing: 0.1em; }
     .footer-logo span { color: var(--tiffany); }
     footer p { font-size: 0.75rem; color: rgba(255,255,255,0.3); }
-    footer a { color: var(--tiffany); text-decoration: none; font-size: 0.75rem; }
+    footer a { color: var(--tiffany); text-decoration: none; font-size: 0.75rem; transition: color 0.2s; }
+    footer a:hover { color: var(--tiffany-light); }
+    .footer-meta { display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap; justify-content: flex-end; }
+    .footer-links { display: flex; gap: 1.2rem; }
+    .footer-links a { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255,255,255,0.5); }
+    .footer-links a:hover { color: var(--tiffany); }
 
     /* MODAL */
     .modal-overlay {
@@ -856,7 +861,14 @@
   <footer>
     <div class="footer-logo"><span>3R</span> PADEL CAMP</div>
     <p>© 2026 3R Padel Camp · Orihuela Costa, Spain</p>
-    <a href="mailto:3rpadelclub@gmail.com">3rpadelclub@gmail.com</a>
+    <div class="footer-meta">
+      <div class="footer-links">
+        <a href="legal-notice.html">Legal</a>
+        <a href="privacy-policy.html">Privacy</a>
+        <a href="cookie-policy.html">Cookies</a>
+      </div>
+      <a href="mailto:3rpadelclub@gmail.com">3rpadelclub@gmail.com</a>
+    </div>
   </footer>
 
   <!-- MODAL -->
@@ -916,4 +928,17 @@
     document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
     function handleSubmit(e) {
       e.preventDefault();
-      cons
+      const name = document.getElementById('fname').value;
+      const email = document.getElementById('femail').value;
+      const msg = document.getElementById('fmsg').value;
+      const subject = encodeURIComponent('3R Padel Camp Enquiry from ' + name);
+      const body = encodeURIComponent(
+        'Hi 3R Padel Camp team,\n\n' +
+        (msg ? msg + '\n\n' : 'I am interested in joining the camp and would love to get more details on pricing and availability.\n\n') +
+        'Name: ' + name + '\nEmail: ' + email + '\n\nLooking forward to hearing from you!'
+      );
+      window.location.href = 'mailto:3rpadelclub@gmail.com?subject=' + subject + '&body=' + body;
+    }
+  </script>
+</body>
+</html>
